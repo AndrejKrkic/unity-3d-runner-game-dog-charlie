@@ -17,7 +17,6 @@ How to play:
 ---
 
 ## 🚀 Features
-- Easy to play
 
 - Obstacle avoidance mechanics
 
@@ -29,7 +28,9 @@ How to play:
 
 - Endless mode
 
--  Score system based on player performance
+- Score system based on player performance
+
+- Easy to play
 
 ---
 
@@ -37,7 +38,7 @@ How to play:
 
 1. Clone the repository:
 
-```git clone https://github.com/your-username/your-repo-name.git```
+```git clone https://github.com/AndrejKrkic/unity-3d-runner-game-dog-charlie.git```
 
 2. Open the project in Unity Hub
 
@@ -59,6 +60,8 @@ Endless mode increases difficulty over time.
 
 ## 🧠 What I Learned
 Implementing player movement and physics-based interactions in Unity
+
+Developed understanding of blockchain transaction processes through integration of MetaMask within Unity applications.
 
 Designing engaging gameplay mechanics for a runner-style game
 
