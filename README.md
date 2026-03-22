@@ -41,7 +41,7 @@ How to play:
 
 2. Open the project in Unity Hub
 
-3. Select the project folder and open it using the Unity Editor
+3. Select the project folder and open it using the Unity Editor (Unity 2021.2.11f1)
 
 4. Open the "Main Menu" Scene
 

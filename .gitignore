@@ -6,6 +6,8 @@
 /Pas Carli/[Ll]ogs/
 /Pas Carli/UserSettings/
 /Pas Carli/AndroidBuild/
+/Pas Carli/*.csproj
+/Pas Carli/*.sln
 
 # MemoryCaptures can get excessive in size.
 MemoryCaptures/
@@ -17,7 +19,7 @@ MemoryCaptures/
 # /[Aa]ssets/AssetStoreTools*
 
 # Visual Studio cache directory
-.vs/
+/Pas Carli/.vs/
 
 # Rider
 .idea/
