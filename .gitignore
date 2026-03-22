@@ -10,6 +10,19 @@
 /Pas Carli/*.sln
 /Pas Carli/.vsconfig
 
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+AndroidBuild/
+*.csproj
+*.sln
+.vsconfig
+.vs/
+
 # MemoryCaptures can get excessive in size.
 MemoryCaptures/
 
