@@ -1,54 +1,53 @@
-#3D Endless Runner Game
+# 3D Runner Game - Dog Charlie
 
 A 3D endless runner game developed in Unity, where the player must survive while avoiding obstacles with different characters.
+
 How to play: 
-Desktop - press and hold space bar to stop, release to run.
-Mobile - press and hold finger to stop, release finger to run.
+
+**Desktop** - press and hold space bar to stop, release to run.
+
+**Mobile** - press and hold finger to stop, release finger to run.
 
 ---
-##🎮 Preview
+## 🎮 Preview
 
 
 ---
 
 ## 🚀 Features
-- Smooth player movement and controls
+- Easy to play
 
 - Obstacle avoidance mechanics
 
-- AI-driven opponents that challenge the player
+- Continue playing a game after you lose with MetaMask wallet
 
-- Survival-based gameplay on dynamic platforms
+- Different characters
 
-- Score system based on player performance
+- Fun predefined levels
 
----
+- Endless mode
 
-##🛠️ Tech Stack
-
-- \*\*Game Engine:\*\* Unity
-- \*\*Programming Language:\*\* C#
-- \*\*Tools:\*\* Unity Editor, Visual Studio
-- \*\*Physics:\*\* Unity Physics System
+-  Score system based on player performance
 
 ---
 
 ## ⚙️ Installation
 
-
 1. Clone the repository:
 
-&#x20;  ```bash &#x20;  git clone https://github.com/your-username/your-repo-name.git```
+'#34b1eb'  ```bash git clone https://github.com/your-username/your-repo-name.git```
 
 2. Open the project in Unity Hub
 
 3. Select the project folder and open it using the Unity Editor
 
-4\. Press Play in Unity to run the game
+4. Open the "Main Menu" Scene
+
+4. Press Play in Unity to run the game
 
 ## 🎯 Gameplay
 
-The goal of the game is to stay on the platform as long as possible while avoiding obstacles and other characters trying to push the player off.
+The goal of the game is to finish all levels, or to score as much as you can in endless mode while avoiding obstacles and other characters.
 
 ## 🧠 What I Learned
 Implementing player movement and physics-based interactions in Unity
@@ -68,7 +67,7 @@ ProjectSettings/ – Unity project settings
 Packages/ – Project dependencies
 
 
-\## 📬 Contact
+## 📬 Contact
 
 LinkedIn: https://www.linkedin.com/in/andrej-krkic-862805265/
 
