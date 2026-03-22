@@ -1,0 +1,26 @@
+/Pas Carli/[Ll]ibrary/
+/Pas Carli/[Tt]emp/
+/Pas Carli/[Oo]bj/
+/Pas Carli/[Bb]uild/
+/Pas Carli/[Bb]uilds/
+/Pas Carli/[Ll]ogs/
+/Pas Carli/UserSettings/
+
+# MemoryCaptures can get excessive in size.
+MemoryCaptures/
+
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
+
+# Uncomment this line if you wish to ignore the asset store tools plugin
+# /[Aa]ssets/AssetStoreTools*
+
+# Visual Studio cache directory
+.vs/
+
+# Rider
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
