@@ -1,30 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float speed;
-    public float thrust = 1.0f;
-    public float distance = 0.5f;
-    public Transform jumpPos;
-    public Vector3 FallingDown;
-    private bool stop = false;
-    public Animator animator;
-    public GameObject endScreen;
 
-    void Start()
-    {
-        
-    }
+    private bool invulnerable = false, stop = false;
+
+    [SerializeField]
+    private Text scoreText;
+    [SerializeField]
+    private Rigidbody rb;
+    [SerializeField]
+    private Animator animator;
+    [SerializeField]
+    private GameObject endScreen, shield;
+    [SerializeField]
+    private float speed;
+
+    private int score;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //rb.AddForce(Vector3.up * thrust);
-            //Debug.Log("jump");
             stop = true;
             animator.SetBool("isRunning", false);
         }
@@ -34,28 +34,6 @@ public class Player : MonoBehaviour
             animator.SetBool("isRunning", true);
         }
 
-        //if (Input.touchCount > 0 && IsGrounded() == true)
-        //{
-        //    Touch touch = Input.GetTouch(0);
-
-        //    if (touch.phase == TouchPhase.Began)
-        //    {
-        //        rb.AddForce(Vector3.up * thrust);
-        //    }
-
-
-
-        //}
-
-        //if (Input.touchCount > 0)
-        //{
-        //    Touch touch1 = Input.GetTouch(0);
-
-        //    if (touch1.phase == TouchPhase.Ended)
-        //    {
-        //        rb.AddForce(FallingDown);
-        //    }
-        //}
 
         if (Input.touchCount > 0)
         {
@@ -64,31 +42,54 @@ public class Player : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 stop = true;
+                animator.SetBool("isRunning", false);
             }
 
             if (touch.phase == TouchPhase.Ended)
             {
                 stop = false;
+                animator.SetBool("isRunning", true);
             }
         }
-        
+
     }
     
-
     void FixedUpdate()
     {
         if (!stop)
         rb.MovePosition(transform.position + Vector3.forward * Time.deltaTime * speed);
     }
 
-    bool IsGrounded()
+    public void AddScore()
     {
-        return Physics.Raycast(jumpPos.position, Vector3.down, distance);
+        score++;
+        scoreText.text = score.ToString();
+        speed += 0.5f;
+    }
+
+    public void BecomeInvulnerable()
+    {
+        stop = true;
+        invulnerable = true;
+        shield.SetActive(true);
+        Invoke("BecomeVulnerable", 6f);
+    }
+
+    private void BecomeVulnerable()
+    {
+        invulnerable = false;
+        shield.SetActive(false);
     }
 
     public void Dead()
     {
+        if (invulnerable)
+            return;
+
+        if (score > PlayerPrefs.GetInt("Highscore"))
+            PlayerPrefs.SetInt("Highscore", score);
+
         endScreen.SetActive(true);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 }

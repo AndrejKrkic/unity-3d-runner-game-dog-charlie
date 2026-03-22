@@ -1426,7 +1426,7 @@ GameObject:
   - component: {fileID: 405517775}
   - component: {fileID: 405517776}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1540,8 +1540,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af1256d742de0943afa9439a6e9fc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos: {fileID: 1264618244}
   player: {fileID: 1612544932}
+  anim: {fileID: 0}
+  type: 1
 --- !u!4 &414268669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4931211907768612, guid: e88b7bb02ae149940a5a0cddf34fe370,
@@ -2477,7 +2478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abc5587a045a3b43bdd3d64bd167722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
+  level: 4
 --- !u!65 &662389822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6881,8 +6882,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af1256d742de0943afa9439a6e9fc76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos: {fileID: 894937494}
   player: {fileID: 1612544932}
+  anim: {fileID: 0}
+  type: 2
 --- !u!65 &1579530055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7231,12 +7233,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1612544937}
   speed: 3
-  thrust: 340
-  distance: 0.2
-  jumpPos: {fileID: 1572811067}
-  FallingDown: {x: 0, y: 0, z: 0}
   animator: {fileID: 1856925393}
   endScreen: {fileID: 167939151}
+  score: 0
+  scoreText: {fileID: 2109430235}
 --- !u!65 &1612544939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7281,7 +7281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abc5587a045a3b43bdd3d64bd167722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 1
+  level: 3
 --- !u!65 &1650449237
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8172,6 +8172,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1806072922}
+  - {fileID: 2109430234}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8944,6 +8945,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+--- !u!1 &2109430233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2109430234}
+  - component: {fileID: 2109430236}
+  - component: {fileID: 2109430235}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2109430234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109430233}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1833980973}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 20, y: -20}
+  m_SizeDelta: {x: 160, y: 50.37}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &2109430235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109430233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9333334, g: 0.94117653, b: 0.5647059, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 24eeb22fbfa6ee0409de8e4e826c8cd4, type: 3}
+    m_FontSize: 34
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Nivo 2
+--- !u!222 &2109430236
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109430233}
+  m_CullTransparentMesh: 1
 --- !u!4 &2118365606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4252784401376168, guid: 22a3fd8d3e59a1149bdcd775c0e87241,
