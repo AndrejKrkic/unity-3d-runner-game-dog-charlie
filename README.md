@@ -19,7 +19,7 @@ How to play:
 
 - Obstacle avoidance mechanics
 
-- Continue playing a game after you lose with MetaMask wallet
+- Continue playing a game after you lose with **MetaMask** wallet
 
 - Different characters
 
@@ -35,7 +35,7 @@ How to play:
 
 1. Clone the repository:
 
-'#34b1eb'  ```bash git clone https://github.com/your-username/your-repo-name.git```
+```git clone https://github.com/your-username/your-repo-name.git```
 
 2. Open the project in Unity Hub
 
@@ -47,7 +47,13 @@ How to play:
 
 ## 🎯 Gameplay
 
+Avoid obstacles by stopping the character.
+
 The goal of the game is to finish all levels, or to score as much as you can in endless mode while avoiding obstacles and other characters.
+
+Each subsequent level is more difficult.
+
+Endless mode increases difficulty over time.
 
 ## 🧠 What I Learned
 Implementing player movement and physics-based interactions in Unity
