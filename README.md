@@ -11,7 +11,7 @@ How to play:
 ---
 ## 🎮 Preview
 
-![Gameplay Preview](./images/gameplay preview.gif)
+![Gameplay Preview](/images/gameplayPreview.gif)
 
 > Try to stay on the platform while avoiding obstacles and other characters!
 ---
