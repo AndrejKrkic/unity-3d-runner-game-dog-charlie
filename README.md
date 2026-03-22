@@ -1,125 +1,71 @@
-\# 3D Endless Runner Game
+#3D Endless Runner Game
+
+A 3D endless runner game developed in Unity, where the player must survive while avoiding obstacles with different characters.
+How to play: 
+Desktop - press and hold space bar to stop, release to run.
+Mobile - press and hold finger to stop, release finger to run.
+
+---
+##🎮 Preview
 
 
+---
 
-A 3D endless runner game developed in Unity, where the player must survive on a platform while avoiding obstacles and competing against other characters.
+## 🚀 Features
+- Smooth player movement and controls
 
+- Obstacle avoidance mechanics
 
+- AI-driven opponents that challenge the player
 
-\---
+- Survival-based gameplay on dynamic platforms
 
+- Score system based on player performance
 
+---
 
-\## 🎮 Preview
+##🛠️ Tech Stack
 
+- \*\*Game Engine:\*\* Unity
+- \*\*Programming Language:\*\* C#
+- \*\*Tools:\*\* Unity Editor, Visual Studio
+- \*\*Physics:\*\* Unity Physics System
 
+---
 
-
-
-\---
-
-
-
-\## 🚀 Features
-
-
-
-\- Smooth player movement and controls
-
-\- Obstacle avoidance mechanics
-
-\- AI-driven opponents that challenge the player
-
-\- Survival-based gameplay on dynamic platforms
-
-\- Score system based on player performance
+## ⚙️ Installation
 
 
+1. Clone the repository:
 
-\---
+&#x20;  ```bash &#x20;  git clone https://github.com/your-username/your-repo-name.git```
 
+2. Open the project in Unity Hub
 
-
-\## 🛠️ Tech Stack
-
-
-
-\- \*\*Game Engine:\*\* Unity
-
-\- \*\*Programming Language:\*\* C#
-
-\- \*\*Tools:\*\* Unity Editor, Visual Studio
-
-\- \*\*Physics:\*\* Unity Physics System
-
-
-
-\---
-
-
-
-\## ⚙️ Installation
-
-
-
-1\. Clone the repository:
-
-&#x20;  ```bash
-
-&#x20;  git clone https://github.com/your-username/your-repo-name.git
-
-2\. Open the project in Unity Hub
-
-
-
-3\. Select the project folder and open it using the Unity Editor
-
-
+3. Select the project folder and open it using the Unity Editor
 
 4\. Press Play in Unity to run the game
 
-
-
-\## 🎯 Gameplay
-
-
+## 🎯 Gameplay
 
 The goal of the game is to stay on the platform as long as possible while avoiding obstacles and other characters trying to push the player off.
 
-
-
-\## 🧠 What I Learned
-
+## 🧠 What I Learned
 Implementing player movement and physics-based interactions in Unity
-
-
 
 Designing engaging gameplay mechanics for a runner-style game
 
-
-
 Working with Unity’s component-based architecture
-
-
 
 Handling collisions and game logic in C#
 
-
-
-\## 📁 Project Structure
-
-
+## 📁 Project Structure
 
 Assets/ – Game assets, scripts, and scenes
 
-
-
 ProjectSettings/ – Unity project settings
 
-
-
 Packages/ – Project dependencies
-
 
 
 \## 📬 Contact
