@@ -8,6 +8,7 @@
 /Pas Carli/AndroidBuild/
 /Pas Carli/*.csproj
 /Pas Carli/*.sln
+/Pas Carli/.vsconfig
 
 # MemoryCaptures can get excessive in size.
 MemoryCaptures/
